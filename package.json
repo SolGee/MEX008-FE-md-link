@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "author": "Solanyi Sandoval",
   "license": "ISC",
   "bin": {
-    "sol-md-links": "./lib/cli.js"
+    "sol-md-links": "cli.js"
   },
   "bugs": {
     "url": "https://github.com/SolGee/MEX008-FE-md-link/issues"
