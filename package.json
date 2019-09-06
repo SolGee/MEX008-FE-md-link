@@ -26,7 +26,7 @@
   "homepage": "https://github.com/SolGee/MEX008-FE-md-link#readme",
   "dependencies": {
     "markdown-it": "^9.1.0",
-    "node-fetch-npm": "^2.0.2"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
