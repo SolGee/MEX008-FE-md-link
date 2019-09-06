@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "tests": "eslint . && jest --coverage",
+    "eslint": "eslint --ext .js lib/ test/ MEX008-FE-MD-LINK"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,15 @@
   },
   "homepage": "https://github.com/SolGee/MEX008-FE-md-link#readme",
   "dependencies": {
-    "markdown-it": "^9.1.0"
+    "markdown-it": "^9.1.0",
+    "node-fetch-npm": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }

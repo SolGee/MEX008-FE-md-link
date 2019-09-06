@@ -3,6 +3,14 @@
     "browser": true
   },
   "parserOptions": {
-    "ecmaVersion": 6
+    "ecmaVersion": 2019
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "example": false
+  },
+  "rules": {
+    "no-console": 0,
+    "semi": 2
   }
 }
