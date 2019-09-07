@@ -3,7 +3,7 @@ const readMarkdown = require('./lib/readMd.js');
 const filterMarkdown = require('./lib/filterFile.js');
 const statsOption = require('./lib/stats.js');
 const validateOption = require('./lib/validate.js');
-const statsValidateOptions = require ('./lib/statsvalidate.js')
+const statsValidateOptions = require ('./lib/statsvalidate.js');
 
 
 
