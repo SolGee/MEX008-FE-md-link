@@ -4,17 +4,18 @@ const filterMarkdown = require('./lib/filterFile.js');
 const statsOption = require('./lib/stats.js');
 const validateOption = require('./lib/validate.js');
 const statsValidateOptions = require ('./lib/statsvalidate.js');
+const colors = require('colors')
 
 
 
 
 module.exports = (path, {validate, stats}) => { 
     if(path === null){
-        console.log('No se ha especificado ninguna ruta de archivo.');
+        console.log(' No se ha especificado ninguna ruta de archivo. ' .bgCyan .black);
         return 'No se ha especificado ninguna ruta de archivo.';
     }
     if(isMD(path) === false){
-        console.log('No hay ningun archivo MD en esta ruta.');
+        console.log(' No hay ningun archivo MD en esta ruta. ' .bgRed .black);
         return 'No hay ningun archivo MD en esta ruta.';
     }
     if(path){
@@ -22,7 +23,7 @@ module.exports = (path, {validate, stats}) => {
             .then( async data => {
                 const justLinks = filterMarkdown(data, path);
                 if(data === ''){
-                    console.log('El archivo esta vacío');
+                    console.log(' El archivo esta vacío ' .bgBlue);
                     return 'El archivo esta vacío';
                 }else if ( validate && stats){
                     const validateResults = await validateOption(justLinks);

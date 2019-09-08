@@ -25,6 +25,7 @@
     },
     "homepage": "https://github.com/SolGee/MEX008-FE-md-link#readme",
     "dependencies": {
+        "colors": "^1.3.3",
         "markdown-it": "^9.1.0",
         "node-fetch": "^2.6.0"
     },

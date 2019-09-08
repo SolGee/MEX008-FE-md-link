@@ -57,3 +57,17 @@ Esto retornara el total de links, y cuantos de ellos son no se repiten.
 * `sol-md-links README.md --stats --validate` 
 
 Esto retornara el total de links, cuantos de ellos son no se repiten y cuantos estan rotos.
+
+### API
+
+1. Tener instalado `md-links-solg`
+2. Requerirla desde:
+`const mdLinks: require(md-links-solg)
+mdLinks('./README.md');`
+
+* El resultado aparecera en la terminal
+
+3. Para incluir las opciones ([flag](https://golang.org/pkg/flag/))
+
+`const mdLinks: require(md-links-solg)
+mdLinks('./README.md', {validate: true});`
