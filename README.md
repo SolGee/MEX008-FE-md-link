@@ -34,4 +34,26 @@ Desarrollar una libreria funcional que se capaz de retornar los links que se enc
 
 `npm install -g md-links-solg`
 
-## 
+## ¿Cómo se usa?
+
+*md-links-solg* puede ser ejecutado desde la terminal o partiendo de una archivo de JavaScript.
+
+### Desde terminal
+
+1. Tener instalado `md-links-solg`
+2. Teclear en terminal `sol-md-links` + Enter
+3. Para saber cuales links aun estan vigentes agrega la [flag](https://golang.org/pkg/flag/) `--validate`:
+* `sol-md-links README.md --validate`
+
+Esto retornara un listado de los links con su estatus 'OK' o 'FAIL', además de contener los enunciados con los links que ya no funcionan.
+
+4. Para saber cuantos links son, agrega la [flag](https://golang.org/pkg/flag/) `--stats`:
+* `sol-md-links README.md --stats`
+
+Esto retornara el total de links, y cuantos de ellos son no se repiten.
+
+5. Si deseas saber cuantos links estan "rotos" deberas incluir ambas banderas.
+
+* `sol-md-links README.md --stats --validate` 
+
+Esto retornara el total de links, cuantos de ellos son no se repiten y cuantos estan rotos.

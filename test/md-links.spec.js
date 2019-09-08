@@ -35,7 +35,24 @@ describe('mdLinks', () => {
         ]);
     });
     it('Once the user pass a MD file, should return an array that includes an \'status\' property', () => {
-        expect(mdLinks(''))
+        expect(mdLinks('../md-files/justlinks.js', {validate: true, stats: null})).resolves.toEqual([
+            { href: 'https://github.com/SolGee/MEX008-FE-md-link',
+                text: 'SolGee Repository',
+                path: '.\\md-files\\justlinks.md',
+                status: 'OK' },
+            { href: 'https://hipsssssum.co/',
+                text: 'Hipsum',
+                path: '.\\md-files\\justlinks.md',
+                status: 'FAIL' },
+            { href: 'https://markdown.es/sintaxis-markdown/#codi',
+                text: 'Markdown',
+                path: '.\\md-files\\justlinks.md',
+                status: 'OK' },
+            { href: 'https://hipsssssum.co/',
+                text: 'Hipsum',
+                path: '.\\md-files\\justlinks.md',
+                status: 'FAIL' }
+        ]);
         
-    })
+    });
 });
