@@ -15,7 +15,7 @@ describe('mdLinks', () => {
     it('Should console.log \'No hay ningun archivo MD en esta ruta.\'', () => {
         expect(mdLinks('../md-files/notMD.txt', {validate: null, stats: null})).toBe('No hay ningun archivo MD en esta ruta.');
     });
-    it('Should console.log \'No se ha especificado ninguna ruta de archivo.\'', () =>{
+    it('Should console.log \'No se ha especificado ninguna ruta de archivo.\'', () => {
         expect(mdLinks(null, {validate: null, stats: null})).toBe('No se ha especificado ninguna ruta de archivo.');
     });
     it('Should console.log an array once the user pass a MD file\'s route', () => {
@@ -34,4 +34,8 @@ describe('mdLinks', () => {
                 path: '.\\md-files\\justlinks.md' } 
         ]);
     });
+    it('Once the user pass a MD file, should return an array that includes an \'status\' property', () => {
+        expect(mdLinks(''))
+        
+    })
 });
