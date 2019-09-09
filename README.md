@@ -71,3 +71,9 @@ mdLinks('./README.md');`
 
 `const mdLinks: require(md-links-solg)
 mdLinks('./README.md', {validate: true});`
+
+## Plan de acción
+
+#### GitHub 
+- [x] Forkear y clonar repositorio de [Laboratoria](https://www.laboratoria.la/)
+- [x] Instalar dependencias ([jest](https://jestjs.io/),[eslint](https://eslint.org/))
