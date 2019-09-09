@@ -97,3 +97,57 @@ mdLinks('./README.md', {validate: true});`
 - [x] readMD.js -> Función que recorre un archivo .md
 - [x] statsvalidate.js -> Función que añade los links que estan rotos a la estadística
 - [x] filterFile.js -> Función que analiza y guarda los links que hay en un archivo .md
+
+#### Test
+
+*index.js*
+
+- [x] Test que compruebe que si sea una función.
+- [x] Test que ejecute la función (sin parámetros).
+- [x] Test que consolee el resultado si recibe una ruta sin archivo MD.
+- [x] Test que consolee el resultado en caso de que el archivo MD no contenga links.
+- [] Test que ejecute la función con un solo parámetro (validate).
+- [] Test que ejecute la función con un solo parámetro (stats).
+- [] Test que ejecute la función con dos parametros (path y validate).
+
+*readfile.js*
+
+- [] Test que compruebe que es una función.
+- [] Test que revise que lo que retorna es una string.
+
+*md.js*
+
+- [] Test que compruebe que si sea una función.
+- [] Test que retorne true al recibir un archivo MD.
+- [] Test que retorne false al recibir un archivo que sea TXT.
+
+*filterFile.js*
+
+- [] Test que compruebe que si sea una función.
+- [] Test que revisa que pasa si recibe un archivo sin links.
+- [] Test que revisa que pasa si recibe un archivo con puros links.
+- [] Test que revisa que pasa si recibe un archivo con links y texto variado.
+
+*validate.js*
+- [] Test que compruebe que si sea una función.
+- [] Test que pase un arreglo de links no rotos revisar su retorno de ok.
+- [] Test que pase un arreglo de links rotos y no rotos, revisar que su retorno sea ok o fail.
+- [] Test que pase un arreglo de links rotos revisar que su retorno sea fail.
+
+*stats.js*
+- [] Test que compruebe que si sea una función.
+- [] Test que pase un arreglo de links no rotos revisar y que regrese el total de los links.
+- [] Test que pase un arreglo de links rotos y no rotos que regrese el total de los links de c/u.
+- [] Test que pase un arreglo de links rotos y que regrese el total de los links rotos.
+
+ *statsvalidate.js*
+ - [] Test que compruebe que si sea una función.
+ - [] Test que comprueba el total de links rotos.
+
+## Diagrama de flujo
+![Diagrama de flujo](https://github.com/SolGee/MEX008-FE-md-link/blob/master/diagrama-flujo.jpeg)
+
+## Autores
+
+Solanyi Sandoval
+
