@@ -77,3 +77,23 @@ mdLinks('./README.md', {validate: true});`
 #### GitHub 
 - [x] Forkear y clonar repositorio de [Laboratoria](https://www.laboratoria.la/)
 - [x] Instalar dependencias ([jest](https://jestjs.io/),[eslint](https://eslint.org/))
+- [x] Revisar la documentación sugerida para resolver el proyecto.
+
+#### NPM
+- [x] Crear una cuenta en NPM.
+- [x] Crear archivo package.json desde `npm init`
+- [x] Vincular proyecto con NPM.
+- [x] Versionar archivo package.json.
+- [x] Subir archivos a NPM.
+
+#### Elegir librería
+- [x] (Markdown-it)[https://github.com/markdown-it/markdown-it]
+
+#### Modulos
+- [x] index.js -> Función maestra
+- [x] stats.js -> Función de estadística de los links
+- [x] validate.js -> Función para revisar la vigencia de los links
+- [x] md.js -> Función que detecta si es un archivo .md
+- [x] readMD.js -> Función que recorre un archivo .md
+- [x] statsvalidate.js -> Función que añade los links que estan rotos a la estadística
+- [x] filterFile.js -> Función que analiza y guarda los links que hay en un archivo .md
